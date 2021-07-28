@@ -17,6 +17,17 @@ class Animal:
   def __add__(self,other):
     return f'{self.name} and {other.name}'
 
-class Horse(Animal)
+
+#inheritance
+class Horse(Animal):
+  def __init__(self,name,coatColor):
+    super().__init__(name)
+    self.coatColor = coatColor
+
+  def makeSound(self):
+    print("I can speak hooman now!")
+
+  
+
 
 
